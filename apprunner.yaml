@@ -11,6 +11,6 @@ run:
     port: 3000
   env:
     - name: FOREST_AUTH_SECRET
-      value: "0e62d8f44c260976e78c97d394d779a20dc200979a33f693"
+      value: "fb7fbe468a42702d1fec59edebc0abe7516dcb9a77a2b8d4"
     - name: FOREST_ENV_SECRET
-      value: "ba51efbfbe904955743f2a34cad982b7161eea32cdecd882353cb0eaa577ee93"
+      value: "d96d2c5e8b4457c7f4f8e495c7e200441e9081ed415f444531070e4967d2dc7c"
