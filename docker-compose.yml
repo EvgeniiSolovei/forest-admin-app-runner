@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  forest-admin-elastic-beanstalk:
+    container_name: forest-admin-elastic-beanstalk
+    hostname: forest-admin-elastic-beanstalk
+    build: ./
+    command: npm run start:debug
+    volumes:
+      - ./src:/app/src
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    env_file: ".env"

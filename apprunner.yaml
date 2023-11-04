@@ -1,0 +1,16 @@
+version: 1.0
+runtime: nodejs16 
+build:
+  commands:
+    build:
+      - npm install --legacy-peer-deps
+      - npm run build
+run: 
+  command: npm run start
+  network:
+    port: 3000
+  env:
+    - name: FOREST_AUTH_SECRET
+      value: "0e62d8f44c260976e78c97d394d779a20dc200979a33f693"
+    - name: FOREST_ENV_SECRET
+      value: "ba51efbfbe904955743f2a34cad982b7161eea32cdecd882353cb0eaa577ee93"
