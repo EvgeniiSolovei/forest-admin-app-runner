@@ -6,6 +6,9 @@ import { createSqlDataSource } from '@forestadmin/datasource-sql';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  console.log('FOREST_AUTH_SECRET = ', process.env.FOREST_AUTH_SECRET);
+  console.log('FOREST_ENV_SECRET = ', process.env.FOREST_ENV_SECRET);
+
   const agent = createAgent({
     authSecret: process.env.FOREST_AUTH_SECRET,
     envSecret: process.env.FOREST_ENV_SECRET,
